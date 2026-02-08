@@ -1,0 +1,7 @@
+{
+  "name": "Nexus 1",
+  "description": "A modern, futuristic digital company profile for Nexus Digital Solutions, featuring interactive AI assistant powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
