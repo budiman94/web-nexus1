@@ -41,10 +41,10 @@ export const STATS: Stat[] = [
 ];
 
 export const PROJECTS: Project[] = [
-  { id: '1', title: 'Aether Finance', category: 'FinTech', image: 'https://picsum.photos/seed/fin/800/600' },
-  { id: '2', title: 'Solaris Cloud', category: 'Infrastructure', image: 'https://picsum.photos/seed/cloud/800/600' },
-  { id: '3', title: 'NeoHealth AI', category: 'HealthCare', image: 'https://picsum.photos/seed/health/800/600' },
-  { id: '4', title: 'Vortex ERP', category: 'SaaS', image: 'https://picsum.photos/seed/vortex/800/600' }
+  { id: '1', title: 'Aether Finance', category: 'FinTech', image: 'https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=800' },
+  { id: '2', title: 'Solaris Cloud', category: 'Infrastructure', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800' },
+  { id: '3', title: 'NeoHealth AI', category: 'HealthCare', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800' },
+  { id: '4', title: 'Vortex ERP', category: 'SaaS', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800' }
 ];
 
 export const COMPANY_DATA = `

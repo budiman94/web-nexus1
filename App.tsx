@@ -39,7 +39,7 @@ function App() {
         </section>
 
         <section id="services">
-          <Services />
+          <Services onDetail={handleServiceDetail} />
         </section>
 
         <Stats />

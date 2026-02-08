@@ -2,7 +2,11 @@
 import React from 'react';
 import { SERVICES } from '../constants';
 
-const Services: React.FC = () => {
+interface ServicesProps {
+  onDetail?: (serviceName: string) => void;
+}
+
+const Services: React.FC<ServicesProps> = ({ onDetail }) => {
   return (
     <section id="services" className="py-24 bg-slate-950">
       <div className="max-w-7xl mx-auto px-6">
@@ -24,13 +28,16 @@ const Services: React.FC = () => {
               <p className="text-slate-400 text-sm leading-relaxed">
                 {service.description}
               </p>
-              <div className="mt-8 pt-6 border-t border-white/5 opacity-0 group-hover:opacity-100 transition-opacity">
-                <a href="#" className="text-blue-400 text-sm font-bold flex items-center">
+              <div className="mt-8 pt-6 border-t border-white/5">
+                <button 
+                  onClick={() => onDetail?.(service.title)}
+                  className="text-blue-400 text-sm font-bold flex items-center hover:text-blue-300 transition-colors"
+                >
                   Learn more
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           ))}
